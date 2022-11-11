@@ -1,0 +1,32 @@
+.messages {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.messages__modal {
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 10px 10px 20px 0;
+}
+
+.messages__modal_error {
+  display: flex;
+  background-color: #DB584F;
+}
+
+.messages__modal_success {
+  display: flex;
+  background-color: #00b66b;
+}
+
+.messages__text {
+  padding: 15px;
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.2;
+  color: #fff;
+}

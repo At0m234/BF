@@ -1,0 +1,230 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal__container {
+  position: relative;
+  padding: 30px 40px 30px 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1f1f1f;
+  text-align: left;
+  background-color: #fff;
+  width: 370px;
+  transform: scale(0.5);
+}
+
+.modal__container.active {
+  transform: scale(1);
+}
+
+.signInModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.resetModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__heading {
+  margin: 0;
+  font-size: 30px;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.modal__conditions {
+  margin: 0 0 17px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.modal__conditions:nth-of-type(1) {
+  margin: 25px 0 17px 0;
+}
+
+.modal__conditions span {
+  font-weight: 400;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  z-index: 4;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1f1f1f;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 20px;
+}
+
+.modal__close::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 3px;
+  height: 21px;
+  color: #1f1f1f;
+  transform: rotate(45deg);
+  background-color: #1f1f1f;
+}
+
+.modal__close::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width: 3px;
+  height: 21px;
+  color: #1f1f1f;
+  transform: rotate(-45deg);
+  background-color: #1f1f1f;
+}
+
+.modal__label {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 15px;
+  color: #1f1f1f;
+  margin: 0 0 2px 0;
+}
+
+.modal__inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal__input {
+  height: 38px;
+  padding: 0 15px 0 15px;
+  vertical-align: middle;
+  color: #302B2B;
+  width: 100%;
+  max-width: 338px;
+  font-size: 15px;
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 0 15px 0;
+}
+
+.modal__input:focus, .modal__input:active {
+  border: 2px solid #DB584F;
+}
+
+#expirationDate {
+  width: 55px;
+  padding: 0 10px;
+}
+#expirationDate:nth-of-type(1) {
+  margin: 0 10px 0 0;
+}
+
+.modal__btn {
+  width: 102px;
+  border-radius: 10px;
+  background-color: #DB584F;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  padding: 12.5px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: background-color .1s linear, color .1s linear, border-color .1s linear;
+}
+
+.modal__btn:hover {
+  background-color: #d7443a;
+  cursor: pointer;
+}
+
+#signInModal-signIn {
+  width: 102px;
+  margin: 0 0 15px 0;
+}
+
+#signInModal-signUp {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #DB584F;
+}
+
+#signInModal-resetPass {
+  width: 121px;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #DB584F;
+  padding: 0;
+}
+
+#signUpModal-signUp {
+  width: 205.5px;
+}
+
+#signUpModal-signIn {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #DB584F;
+  padding: 15px 0 0 0;
+  width: 42.42px;
+  margin-left: 10px;
+}
+
+#resetModal-resetPass {
+  width: 181px;
+}
+
+#resetModal-signIn {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #DB584F;
+  padding: 15px 0 0 0;
+  width: 42.42px;
+}
+
+#confirmModal-send {
+  width: 135.34px;
+}

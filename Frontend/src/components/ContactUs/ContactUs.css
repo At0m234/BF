@@ -1,0 +1,125 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1050px;
+  background-color: #EDEDED;
+  margin: 0 auto 122px auto;
+  min-height: 500px;
+}
+
+.contact-us__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 535px;
+  padding: 0 15px;
+}
+
+.contact-us__title {
+  font-size: 30px;
+  color: #1f1f1f;
+  font-weight: 700;
+  margin: 20px 0 0 0;
+}
+
+.contact-us__subtitle {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #302B2B;
+  max-width: 515px;
+}
+
+.contact-us__subtitle-link, .contact-us__subtitle-link:visited, .contact-us__subtitle-link:focus, .contact-us__subtitle-link:active {
+  opacity: 1;
+  transition: opacity .2s ease-in-out .05s;
+  color: #185ba8;
+  text-decoration: none;
+}
+
+.contact-us__subtitle-link:hover {
+  opacity: .5;
+  transition: opacity .2s ease-in-out .05s;
+}
+
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 515px;
+}
+
+.contact-us__form-input {
+  height: 40px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  border: 1px solid #c4c4c4;
+  color: #1f1f1f;
+  background-color: #fff;
+}
+
+.contact-us__form-message {
+  border: 1px solid #c4c4c4;
+  color: #1f1f1f;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 6px 15px;
+  min-height: 100px;
+  margin: 0 0 10px 0;
+  resize: vertical;
+}
+
+/* .contact-us__form-input:valid, .contact-us__form-message:valid {
+  border: 1px solid #59981A;
+} */
+
+/* .contact-us__form-input:invalid, .contact-us__form-message:invalid {
+  border: 1px solid #F51720;
+} */
+
+.contact-us__form-submit {
+  background-color: #DB584F;
+  color: #fff;
+  padding:  11.5px 30px;
+  max-width: 135px;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact-us__form-submit:hover {
+  cursor: pointer;
+  background-color: #d7443a;
+}
+
+@media screen and (max-width : 993px) {
+  .contact-us {
+    margin: 0;
+  }
+
+  .contact-us__container {
+    max-width: 95%;
+    margin: 20px 0 40px 0;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .contact-us {
+    min-height: 400px;
+  }
+
+  .contact-us__container {
+    max-width: 95%;
+  }
+
+  .contact-us__subtitle {
+    max-width: 100%;
+  }
+
+  .contact-us__form {
+    max-width: 100%;
+  }
+}

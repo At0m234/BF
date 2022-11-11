@@ -1,0 +1,43 @@
+{
+  "name": "berifast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "celebrate": "^13.0.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.5",
+    "express-winston": "^4.0.5",
+    "fs": "0.0.1-security",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^4.4.1",
+    "isemail": "^3.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.17",
+    "multer": "^1.4.3",
+    "multer-gridfs-storage": "^3.0.0",
+    "nodemailer": "^6.7.0",
+    "slug": "^5.1.0",
+    "validator": "^13.5.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.14"
+  }
+}

@@ -1,0 +1,154 @@
+.applications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  min-height: calc(100vh - 477px);
+  background-color: #EDEDED;
+}
+
+.applications__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.applications__title {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-size: 30px;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.applications__heading-container {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 51px;
+  width: 95%;
+}
+
+.applications__table-heading {
+  display: flex;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: transparent;
+  margin: 0;
+  align-content: center;
+}
+
+.applications__table {
+  display: inline-grid;
+  justify-items: stretch;
+  align-items: center;
+  align-content: space-around;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(6, minmax(min-contect, max-content));
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.applications__table div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin: 15px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
+}
+
+.applications__table p {
+  display: flex;
+  justify-content: center;
+  justify-self: stretch;
+  align-self: stretch;
+  text-align: center;
+  max-width: 15%;
+  padding: 15px;
+  margin: 0;
+}
+
+.applications__table a {
+  display: flex;
+  justify-content: center;
+  justify-self: stretch;
+  align-self: stretch;
+  text-align: center;
+  padding: 15px 0 15px 15px;
+  margin: 0;
+  color: #db584f;
+  text-decoration: none;
+}
+
+.applications__table a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width : 550px) {
+  .applications__table-heading {
+    width: 60px;
+    padding: 10px;
+  }
+
+  .applications__table p {
+    display: flex;
+    justify-content: center;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    max-width: 15%;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .applications__table a {
+    display: flex;
+    justify-content: center;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .applications__table p:nth-of-type(1) {
+    width: 50px;
+  }
+
+  .applications__table p:nth-of-type(2) {
+    width: 50px;
+  }
+
+  .applications__table p:nth-of-type(3) {
+    width: 50px;
+  }
+
+  .applications__table p:nth-of-type(4) {
+    width: 50px;
+  }
+
+  .applications__table p:nth-of-type(5) {
+    width: 50px;
+  }
+
+  .applications__table a:nth-of-type(6) {
+    width: 50px;
+  }
+}

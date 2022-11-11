@@ -1,0 +1,109 @@
+.more-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 1050px;
+}
+
+.more-info__container {
+  display: grid;
+  justify-items: stretch;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 450px auto;
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 0;
+  grid-column-gap: 30px;
+  padding: 0 15px;
+  grid-template-areas:
+  "image one"
+  "image two"
+  "image three"
+  "four four";
+}
+
+.more-info__image {
+  width: 450px;
+  height: 330px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: image;
+  align-self: start;
+}
+
+.more-info__paragraph {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.more-info__paragraph-one {
+  grid-area: one;
+}
+
+.more-info__paragraph-two {
+  grid-area: two;
+}
+
+.more-info__paragraph-three {
+  grid-area: three;
+}
+
+.more-info__paragraph-four {
+  grid-area: four;
+}
+
+.more-info__link, .more-info__link:visited, .more-info__link:focus, .more-info__link:active {
+  color: #185ba8;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .2s ease-in-out .03s;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.more-info__link:hover {
+  cursor: pointer;
+  opacity: .65;
+  transition: opacity .2s ease-in-out .03s;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width : 768px) {
+  .more-info__container {
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 450px auto;
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    padding: 0 15px;
+    grid-template-areas:
+    "image image"
+    "one one"
+    "two two"
+    "three three"
+    "four four";
+  }
+}
+
+@media screen and (max-width : 500px) {
+  .more-info__container {
+    grid-template-columns: auto;
+  }
+
+  .more-info__image {
+    width: 90%;
+    height: auto;
+  }
+}
